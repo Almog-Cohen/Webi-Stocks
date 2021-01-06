@@ -1,10 +1,14 @@
 import React from "react";
 import "./StockRow.css";
+import { db } from "../../firebase";
 
 const StockRow = (props) => {
   const percentage = ((props.price - props.openPrice) / props.openPrice) * 100;
+  const buyStock = () => {
+    db.collection("userStocks").where("ticker", "==", props.name);
+  };
   return (
-    <div className="row">
+    <div className="row" onClick={buyStock}>
       <div className="row__intro">
         <h1>{props?.name}</h1>
         <p>{props.shares && props.shares + " shares"}</p>

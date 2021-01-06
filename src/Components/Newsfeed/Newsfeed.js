@@ -1,4 +1,5 @@
 import React from "react";
+import TimeLine from "../TimeLine/TimeLine";
 import LineGraph from "./LineGraph";
 import "./Newsfeed.css";
 
@@ -14,6 +15,17 @@ const Newsfeed = () => {
 
           <div className="newsfeed__char">
             <LineGraph />
+            <TimeLine />
+          </div>
+        </div>
+        <div className="newsfeed__buying__section">
+          <h2> Buying Power</h2>
+          <h2> $4.11</h2>
+        </div>
+        <div className="newsfeed__market__section">
+          <div className="newsfeed__market__box">
+            <p>Markets Close</p>
+            <h1>Happy crissmess</h1>
           </div>
         </div>
       </div>
