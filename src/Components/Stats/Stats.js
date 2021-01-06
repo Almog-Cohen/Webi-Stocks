@@ -4,7 +4,6 @@ import "./Stats.css";
 import StockRow from "../StockRow/StockRow";
 
 const Stats = () => {
-  // const TOKEN = "bvqau6n48v6s3bgpkqag";
   const STOCK_URL = "https://finnhub.io/api/v1/quote";
   const [stockData, setStockData] = useState([]);
   const [seconds, setSeconds] = useState(0);
